@@ -339,6 +339,7 @@ body {
     width: 300px;
     border-radius: 10px;
     box-shadow: 0px 7px;
+    cursor: default;
 }
 
 .bubble-msg-super {
@@ -354,6 +355,7 @@ body {
     width: 300px;
     border-radius: 10px;
     box-shadow: 0px 7px;
+    cursor: default;
 }
 
 .warp-pfp {
@@ -385,6 +387,7 @@ body {
         color: white;
         z-index: 2;
         border-radius: 1px solid;
+        cursor: default;
     }
 
     .badge-crown {
@@ -502,7 +505,7 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 .penutup > a {
@@ -515,4 +518,59 @@ body {
     width: 300px;
     height: 40px;
     border-radius: 10px;
+    cursor: default;
+}
+
+
+
+
+
+.halo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 180px;
+    animation-name: fade;
+    animation-duration: 1s; 
+    animation-delay: 0.20s;
+    animation-fill-mode:backwards;
+}
+
+.halo2 > h1 {
+    color: white;
+    display: flex;
+    cursor: default;
+}
+
+.hh2warp {
+    display: flex;
+}
+
+.hh1 {
+    display: flex;
+    padding-right: 5px;
+    color: white;
+    cursor: default;
+}
+
+.hh2 > a {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    transition: all .3s ease-out;
+}
+
+.hh2 > a:hover {
+    color: rgb(255, 0, 0);
+}
+
+
+
+.floating {
+    display: flex;
+    position: fixed;
+    top: 700px;
+    left: 30px;
+    color: rgb(160, 160, 160);
+    cursor: default;
 }
