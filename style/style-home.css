@@ -26,7 +26,7 @@ body {
 .floating {
     position: fixed;
     color: white;
-    top:91vh;
+    top: 87vh;
     left: 4vh;
 }
 
@@ -102,7 +102,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: rgb(25, 25, 25);
-    height: 91.9vh;
+    height:100vh;
 }
 
 .cont {

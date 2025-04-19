@@ -41,10 +41,10 @@ body {
   }
 
   
-.floating {
+  .floating {
     position: fixed;
     color: white;
-    top:91vh;
+    top: 87vh;
     left: 4vh;
 }
 
@@ -91,10 +91,6 @@ body {
         justify-content: center;
     }
 
-
-.main-role {
-    padding-top: 35px;
-}
 
 .main-role > h2 {
     color: white;
