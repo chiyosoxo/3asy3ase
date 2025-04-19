@@ -103,6 +103,7 @@ body {
     animation-delay: 0.46s;
     animation-fill-mode:backwards;
     cursor: default;
+    padding-top: 40px;
 }
 
 
