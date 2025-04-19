@@ -1,0 +1,132 @@
+*,
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@-webkit-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.floating {
+    position: fixed;
+    color: white;
+    top:91vh;
+    left: 4vh;
+}
+
+.fContainer {
+    display: flex;
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 16px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(11, 11, 11);
+}
+
+.brand > a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+    .brand1 {
+        padding-right: 1px;
+        color: white;
+        font-weight: 700;
+    }
+
+    .brand2 {
+        color: rgb(255, 81, 0);
+        font-weight: 700;
+    }
+
+        .brand > a > span {
+            color: rgb(141, 141, 141);
+            font-size: 6px;
+            font-weight: 700;
+        }
+
+.content > a > button {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    border: none;
+    width: fit-content;
+    height: 26px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+    .content > a > button:hover {
+        padding-left: 8px;
+        padding-right: 8px;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 81, 0);
+        border: none;
+        width: fit-content;
+        height: 26px;
+        cursor: pointer;
+        transition: all .3s ease-out;
+    }
+
+
+.content404 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(25, 25, 25);
+    height: 91.9vh;
+}
+
+.cont {
+    padding-top: 40vh;
+    animation-name: fade;
+    animation-duration: 2s; 
+    animation-delay: 0.20s;
+    animation-fill-mode: backwards;
+}
+
+.gambar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    cursor: default;
+}
+
+    .gambar > img {
+        width: 60px;
+    }
+
+.keterangan {
+    color: white;
+    font-size: 10px;
+    cursor: default;
+}

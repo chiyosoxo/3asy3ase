@@ -1,0 +1,546 @@
+*,
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+@-webkit-keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  @-moz-keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  @-o-keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  @keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  @-webkit-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  
+.floating {
+    position: fixed;
+    color: white;
+    top:91vh;
+    left: 4vh;
+}
+
+    .m1 > h1 {
+        animation-name: slide, fade;
+        animation-duration: 1s; 
+        animation-fill-mode: forwards;
+        display: flex;
+        color: white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.name {
+    padding-top: 30px;
+    display: flex;
+    cursor: default;
+}
+
+    .name > a {
+        display: flex;
+        color: white;
+        text-decoration: none;
+    }
+
+    .name1 {
+        padding-right: 5px;
+    }
+
+    .name2 {
+        color: rgb(255, 81, 0);
+        animation-name: fade;
+        animation-duration: 2s; 
+        animation-delay: 0.30s;
+        animation-fill-mode: backwards;
+    }
+
+    .serole {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+.main-role {
+    padding-top: 35px;
+}
+
+.main-role > h2 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    animation-name: slide, fade;
+    animation-duration: 1s; 
+    animation-delay: 0.46s;
+    animation-fill-mode:backwards;
+    cursor: default;
+}
+
+
+.clss {
+    padding: 10px;
+}
+
+.role {
+    display: flex;
+    border-radius: 10px;
+}
+
+@media (max-width: 870px) {
+    .role {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    width: 151px;
+    height: 230px;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 7px;
+    animation-name: slide, fade;
+    animation-duration: 1s; 
+    animation-delay: 1s;
+    animation-fill-mode:backwards;
+    cursor: default;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .profile > a > img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        width: 70px;
+        margin-right: 4px;
+        object-fit:cover;
+        border-radius: 100px;
+        border: 1.39px solid white;
+    }
+
+    .profile > a > h3 {
+        display: flex;
+        justify-content: center;
+        padding-right: 8px;
+        font-size: 13px;
+    }
+
+    .profile > a {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(224, 224, 224);
+        padding-left: 10px;
+        word-spacing: 30px;
+        padding-right: 5px;
+        text-decoration: none;
+    }
+
+
+    .status-role {
+        width: 82px;
+    }
+
+
+        .badge-admin {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px 5px 2px 5px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(2, 2, 2);
+            border-radius: 5px;
+            font-size: 8px;
+            cursor: default;
+            background-image: url(/src/role/admin.gif);
+            background-blend-mode: difference;
+            animation-name: fade;
+            animation-duration: 1s; 
+            animation-delay: 1.40s;
+            animation-fill-mode:backwards;
+            cursor: default;
+        }
+
+        .badge-owner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(1, 1, 1);
+            color: rgb(255, 255, 255);
+            padding: 3px 5px 3px 5px;
+            border-radius: 5px;
+            font-size: 8px;
+            cursor: default;
+            background-image: url(/src/role/owner.gif);
+            animation-name: fade;
+            animation-duration: 1s; 
+            animation-delay: 1.40s;
+            animation-fill-mode:backwards;
+            cursor: default;
+        }  
+
+        .badge-supportsys {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 5, 5);
+            color: rgb(255, 255, 255);
+            padding: 3px 5px 3px 5px;
+            border-radius: 5px;
+            font-size: 8px;
+            cursor: default;
+            animation-name: fade;
+            animation-duration: 1s; 
+            animation-delay: 1.40s;
+            animation-fill-mode:backwards;
+            cursor: default;
+        }  
+
+        .badge-supporter {
+            background: #d19e1d;
+            color: rgb(0, 0, 0);
+            padding: 3px 5px 3px 5px;
+            border-radius: 5px;
+            font-size: 8px;
+            cursor: default;
+            animation-name: fade;
+            animation-duration: 1s; 
+            animation-delay: 1.40s;
+            animation-fill-mode:backwards;
+            cursor: default;
+        } 
+
+        .badge-supervisor {
+            background-color: rgb(118, 31, 31);
+            color: rgb(255, 255, 255);
+            padding: 3px 5px 3px 5px;
+            border-radius: 5px;
+            font-size: 8px;
+            cursor: default;
+            background-image: url(/src/asset/deco4.gif);
+            background-attachment: fixed;
+            background-blend-mode:difference;
+            animation-name: fade;
+            animation-duration: 1s; 
+            animation-delay: 1.40s;
+            animation-fill-mode:backwards;
+            cursor: default;
+        } 
+
+        .badge-security {
+            background-color: rgb(255, 213, 0);
+            color: rgb(255, 255, 255);
+            padding: 3px 5px 3px 5px;
+            border-radius: 5px;
+            font-size: 8px;
+            cursor: default;background-color: rgb(35, 2, 223);
+            animation-name: fade;
+            animation-duration: 1s; 
+            animation-delay: 1.40s;
+            animation-fill-mode:backwards;
+            cursor: default;
+        } 
+
+        .badge-status {
+            background-color: rgb(16, 16, 16);
+            color: rgb(191, 191, 191);
+            padding: 3px 5px 3px 5px;
+            border-radius: 5px;
+            font-size: 8px;
+            cursor: default;
+            background-image: url(/src/asset/deco1.gif);
+            animation-name: slide, fade;
+            animation-duration: 1s; 
+            animation-delay: 1.58s;
+            animation-fill-mode:backwards;
+            cursor: default;
+        }  
+
+
+.supporter-title {
+    background-color: rgb(14, 14, 14);
+    border-radius: 30px 30px 0px 0px;
+    animation-name: slide, fade;
+    animation-duration: 1s; 
+    animation-delay: 1.54s;
+    animation-fill-mode:backwards;
+}
+
+.supporter-title > h2 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    animation-name: slide, fade;
+    animation-duration: 1s; 
+    animation-delay: 1.54s;
+    animation-fill-mode:backwards;
+    cursor: default;
+    padding-top: 50px;
+}
+
+.donation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bubble-padding {
+    padding: 14px 10px;
+    animation-name: slide, fade;
+    animation-duration: 1s; 
+    animation-delay: 1.80s;
+    animation-fill-mode:backwards;
+}
+
+.bubble-msg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(30, 30, 30);
+    height: 80px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 7px;
+    cursor: default;
+}
+
+.bubble-msg-super {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(30, 30, 30);
+    background-image: url(/src/idk2.gif);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+    height: 80px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 7px;
+    cursor: default;
+}
+
+.ter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+    .ter > a {
+        display: flex;
+        align-items: center;
+
+    }
+
+.warp-pfp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pangkat {
+    display: flex;
+    align-items: center;
+}
+
+    .pfp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .pfp > img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 20px;
+            display: flex;
+        }
+
+
+    .username {
+        display: flex;
+        padding-left: 15px;
+        color: white;
+        border-radius: 1px solid;
+        cursor: default;
+        font-size: 13px;
+    }
+
+    .badge-custom {
+        display: flex;
+        position: absolute;
+        margin-left: 45px;
+    }
+
+        .badge-custom > img {
+            width: 23px;
+            height: 19px;
+        }
+
+    .badge-1 {
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+    }
+
+    .badge-1 > img {
+        width: 18px;
+        height: 18px;
+        padding-top: 2px;
+        position: relative;
+        right: 2px;
+    }
+
+.role-s1 {
+    display: flex;
+    padding-left: 15px;
+}
+
+        .badge-super1 {
+            background: #d19e1d;
+            color: rgb(0, 0, 0);
+            padding: 2px 5px 2px 5px;
+            border-radius: 5px;
+            font-size: 9px;
+            cursor: default;
+            animation-name: fade;
+            animation-duration: 1s; 
+            animation-delay: 1.40s;
+            animation-fill-mode:backwards;
+            cursor: default;
+            padding-left: 3px;
+        } 
+
+        .badge-super2 {
+            background: #108c00;
+            color: rgb(255, 255, 255);
+            padding: 2px 5px 2px 5px;
+            border-radius: 5px;
+            font-size: 9px;
+            cursor: default;
+            animation-name: fade;
+            animation-duration: 1s; 
+            animation-delay: 1.40s;
+            animation-fill-mode:backwards;
+            cursor: default;
+        } 
+
+        .badge-super3 {
+            background: #ff0a0a;
+            color: rgb(255, 255, 255);
+            padding: 2px 5px 2px 5px;
+            border-radius: 5px;
+            font-size: 9px;
+            cursor: default;
+            animation-name: fade;
+            animation-duration: 1s; 
+            animation-delay: 1.40s;
+            animation-fill-mode:backwards;
+            cursor: default;
+        } 
+
+        .badge-standar {
+            background: #101010;
+            color: rgb(255, 255, 255);
+            padding: 2px 5px 2px 5px;
+            border-radius: 5px;
+            font-size: 9px;
+            cursor: default;
+            animation-name: fade;
+            animation-duration: 1s; 
+            animation-delay: 1.40s;
+            animation-fill-mode:backwards;
+            cursor: default;
+        } 
+
+        .badge-subscription {
+            background: #090909;
+            color: rgb(255, 213, 0);
+            padding: 2px 5px 2px 5px;
+            border-radius: 5px;
+            font-size: 9px;
+            cursor: default;
+            animation-name: fade;
+            animation-duration: 1s; 
+            animation-delay: 1.40s;
+            animation-fill-mode:backwards;
+            cursor: default;
+        } 
+
+    @media (max-width: 980px) {
+    .donation {
+        display: flex;
+        flex-direction: column;
+        scale: 20px;
+    }
+}
+
+
+.penutup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.penutup > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(128, 128, 128);
+    font-size: 13px;
+    background-color: rgb(16, 16, 16);
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: default;
+}
